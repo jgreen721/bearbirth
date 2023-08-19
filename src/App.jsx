@@ -3,7 +3,6 @@ import {Canvas, useFrame} from "@react-three/fiber"
 import './App.css'
 import { ScrollControls,Text, Text3D } from '@react-three/drei'
 import Experience from "./Experience"
-import "../node_modules/three/examples/fonts/droid/droid_sans_bold.typeface.json"
 
 
 
@@ -21,9 +20,9 @@ const Birth = ()=>{
 
 
   return (
-    <Text3D font={"../node_modules/three/examples/fonts/droid/droid_sans_bold.typeface.json"} ref={textRef} height={.2} size={1} position={[-2,2,0]}>
+    <Text ref={textRef} height={.2} size={1} position={[0,2.5,0]}>
     BIRTH
- </Text3D>
+ </Text>
   )
 }
 function App() {
